@@ -15,12 +15,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Obx(
-            () => Text(cnt.counter.toString()),
+          Center(
+            child: Obx(
+              () => Text(cnt.counter.toString()),
+            ),
           ),
-          
           ElevatedButton(
             onPressed: cnt.incrementer,
             child: const Icon(Icons.add),
